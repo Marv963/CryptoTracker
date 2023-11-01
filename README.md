@@ -12,7 +12,7 @@
 
 ## What is This? 🤔
 
-This is a CryptoTracker designed to monitor cryptocurrency prices from various exchanges in real-time. By integrating multiple technologies, the tracker fetches the prices via an API, stores this data in a specialized time-series database, and subsequently performs calculations. The primary goal of these calculations is to identify the best arbitrage opportunities between exchanges. This provides users with the capability to systematically pinpoint trading potentials in the world of cryptocurrencies.
+This is a CryptoTracker designed to monitor cryptocurrency prices from various exchanges in real-time. By integrating multiple technologies, the tracker fetches the prices via an API, stores this data in a specialized time-series database, and subsequently performs calculations. The primary goal of these calculations is to identify the best arbitrage opportunities between exchanges. This provides users with the capability to systematically pinpoint trading potentials in the world of cryptocurrencies. For a live demonstration and to access the fully functional platform, visit [this link](https://crypto-tracker.app).
 
 ## Quick Start 🚀
 
