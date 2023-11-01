@@ -1,0 +1,58 @@
+# LaTeX temporary files
+*.aux
+*.log
+*.toc
+
+# PDF output - usually a bad idea to keep this in Git
+*.pdf
+
+# Latexmk
+*.fdb_latexmk
+
+# SyncTeX
+*.synctex.gz
+
+# LaTeX Beamer
+*.snm
+*.vrb
+*.nav
+*.out
+
+# BibTeX
+*.bbl
+*.blg
+
+*.zip
+
+
+secrets/*
+!secrets/.gitkeep
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# logs
+logs/
+log/
+
+# air
+tmp/
+
+# Web
+node_modules/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+
+.DS_STORE
+
+Backup/
+Besprechung/
+Unterlagen\ Vorbereitung
+ccxt-test
+
+thesis_scripte/

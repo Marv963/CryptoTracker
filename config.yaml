@@ -1,0 +1,26 @@
+---
+rabbitmq:
+  username:
+  password:
+  host:
+  port:
+  url:
+  exchange:
+influxdb:
+  url:
+  username:
+  password:
+  host:
+  port:
+  token:
+  org:
+  bucket:
+redis:
+  password:
+  host:
+  port:
+  url:
+websocket:
+  url:
+frontend:
+  url:

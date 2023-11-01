@@ -1,0 +1,43 @@
+---
+services:
+  influxdb:
+    image: influxdb:latest
+    container_name: influxdb
+    restart: always
+    ports:
+      - ${INFLUXDB_HOST}:${INFLUXDB_PORT}:8086
+    volumes:
+      - $PWD/influxdb:/etc/influxdb2
+      - influxdb:/var/lib/influxdb2
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    networks:
+      - cryptoTracker
+
+  redis:
+    container_name: redis
+    image: redis:latest
+    restart: always
+    networks:
+      - default
+    ports:
+      - ${REDIS_HOST}:${REDIS_PORT}:6379
+    volumes:
+      - redis:/data
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    environment:
+      - REDIS_PASSWORD=${REDIS_PASSWORD}
+    command: ["redis-server", "--requirepass", "${REDIS_PASSWORD}"]
+
+volumes:
+  influxdb:
+    external: false
+  mariadb:
+    external: false
+  redis:
+    external: false
+
+networks:
+  cryptoTracker:
+    driver: bridge
