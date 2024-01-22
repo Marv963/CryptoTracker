@@ -74,13 +74,19 @@ export default function App() {
         </NavbarItem>
         <NavbarItem isActive={pathName === "/arbitrage"}>
           <Link href="/arbitrage" aria-current="page">
-            Arbitrage
+            Potentialen
           </Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem>
-          <Button isIconOnly color="secondary" aria-label="Like">
+          <Button
+            isIconOnly
+            color="secondary"
+            aria-label="Like"
+            href="https://github.com/Marv963/CryptoTracker"
+            as={Link}
+          >
             <FaGithub className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all" />
           </Button>
         </NavbarItem>

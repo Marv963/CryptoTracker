@@ -2,25 +2,25 @@
 rabbitmq:
   username:
   password:
-  host:
-  port:
+  host: rabbitmq
+  port: 5672
   url:
-  exchange:
+  exchange: CryptoPricesTopicExchange
 influxdb:
   url:
   username:
   password:
-  host:
-  port:
+  host: influxdb
+  port: 8086
   token:
-  org:
-  bucket:
+  org: CryptoTrackerOrganisation
+  bucket: CryptoTrackerBucket
 redis:
   password:
-  host:
-  port:
+  host: redis
+  port: 6379
   url:
 websocket:
-  url:
+  url: http://localhost:3008/notify
 frontend:
-  url:
+  url: http://localhost:3000

@@ -30,11 +30,6 @@ services:
       - /etc/localtime:/etc/localtime:ro
     networks:
       - cryptoTracker
-    environment:
-      - DOCKER_INFLUXDB_INIT_USERNAME=${INFLUXDB_USERNAME}
-      - DOCKER_INFLUXDB_INIT_PASSWORD=${INFLUXDB_PASSWORD}
-      - DOCKER_INFLUXDB_INIT_ORG=${}
-      - DOCKER_INFLUXDB_INIT_ADMIN_TOKEN=${INFLUXDB_TOKEN}
 
   redis:
     container_name: redis
